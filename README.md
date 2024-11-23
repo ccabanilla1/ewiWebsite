@@ -25,22 +25,8 @@ This repository contains the source code for the **Evening With Industry (EWI) 2
 ### Images
 All visual assets, including the rocket image and QR code, are stored in the `images` folder.
 
-## Website Pages
-### Home Page (index.html)
-- Introduction to the event.
-- Countdown timer to the event start.
-- Links to RSVP and company info.
-
-### Schedule Page (schedule.html)
-- Event timeline with times and activities.
-- Keynote speaker information.
-
-### RSVP Page (rsvp.html)
-- Form link for students to RSVP.
-- QR code for quick access.
-
 ### Dependencies
 This project uses:
-**HTML** for structure.
-**CSS** for styling and layout.
-**JavaScript** for interactivity.
+- **HTML** for structure.
+- **CSS** for styling and layout.
+- **JavaScript** for interactivity.
