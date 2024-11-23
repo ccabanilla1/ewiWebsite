@@ -1,0 +1,190 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #224f67;
+  color: #d6d8dc;
+}
+
+header {
+  background: #224f67;
+  padding: 15px 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Full page height minus header */
+  padding: 0 10%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.event-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Aligns content to the left */
+  height: 90%; /* Ensures full height of the container */
+}
+
+.event-details h1 {
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* Space between buttons */
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #fffdf9;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  color: #3b2b20;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.btn:hover {
+  background-color: #eae7e1;
+  transform: scale(1.05); /* Hover effect */
+}
+
+.countdown {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 30px; /* Space between buttons and countdown */
+}
+
+.rocket-image {
+  flex: 1;
+  text-align: center;
+}
+
+.rocket-image img {
+  width: 100%; /* Rocket image width */
+  animation: float 3s infinite;
+}
+
+/* Rocket Float Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Schedule Section */
+.schedule-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px; /* Space between schedule and keynote speaker */
+  width: 100%;
+  max-width: 1200px; /* Centered container with max width */
+}
+
+/* Event Schedule */
+.event-schedule {
+  flex: 1;
+}
+
+.event-schedule h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.event-schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-schedule ul li {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.event-schedule ul li strong {
+  color: #f75c5c; /* Highlight the time in red */
+}
+
+.event-schedule p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #d6d8dc;
+}
+
+/* Keynote Speaker */
+.keynote-speaker {
+  flex: 1;
+  text-align: center;
+}
+
+.keynote-speaker h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.keynote-speaker img {
+  width: 300px;
+  height: 300px;
+  background-color: #2a6179;
+  margin: 0 auto 20px;
+  border-radius: 15px; /* Rounded edges for the image */
+  display: block;
+}
+
+.keynote-speaker a {
+  color: #f75c5c;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.keynote-speaker a:hover {
+  text-decoration: underline;
+}
